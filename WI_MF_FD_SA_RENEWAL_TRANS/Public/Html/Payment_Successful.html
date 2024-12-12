@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FD Information </title>
+
+
+    <!-- Bootstrap core CSS -->
+
+   
+    <link href="http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/css/custom.css" rel="stylesheet" />
+    <link href="http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/css/custom2.css" rel="stylesheet" />
+    <link href="http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/css/custom_Payment_Successful.css" rel="stylesheet" />
+    <link href="http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/css/media_query.css" rel="stylesheet" />
+    <style>
+        /*body {
+            background-image: url('../images/mahindra-finance-water-mark.png');
+        }*/
+    </style>
+</head>
+
+<body style="background-color:transparent !important;">
+
+   <!-- <div id="wrapper" class="WrapperClass">-->
+
+        <!-- PAGE BODY SECTION -->
+        <!--<div id="page-content-wrapper">-->
+           
+                <!-- Keep all page content within the page-content inset div! -->
+                <div class="page-content inset">
+                    <div class="body_section_head">
+
+                        <div class="inner_body_head bg_fffffff">
+
+
+
+                            <div class="CommonPaddingAdj1">
+                                <div class="col-md-12">
+                                    <!-- <button class="ClsDownloadBtn" id="">Download</button>-->
+                                    <div class="ClsDownloadOutr">
+                                        
+                                        
+                                        <div class="ClsDownloadSec">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-6  col-sm-6 col-xs-6">
+                                                        <div class="PaySlipLeft">
+                                                            <div class="PaySlipLogo">
+                                                                <img class="img-responsive" src=" http://uat-qb.fixeddeposit.mfeka.com/WA_FD_Quick_Buy_2_1/Ereceipt/images/MF_logo.png" />
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="PaySlipHeading">FIXED DEPOSIT ADVICE</h4>
+                                                            </div>
+                                                            <div class="AddressNDataDiv" style="width:80%;">
+                                                                <h5>RECEIVED WITH THANKS FROM:</h5>
+                                                                <p>{name}</p>,<br />
+                                                                <p>{add1}</p>,<br />
+                                                                <p>{add2}</p>,<br />
+                                                                <p>{city}</p>,<br />
+                                                                <p>{state}</p>,<br />
+                                                                <p>PIN Code: <span>{pincode}</span></p>.<br />
+                                                                <p>Phone No: <span>{phon_no}</span></p>.
+                                                            </div>
+
+                                                            <div style="width:20%; float:left; height:auto;">
+                                                                <img style="height:80px; width:100px;" class="img-responsive" src="{imgbytes}" />
+                                                            </div>
+                                                            
+                                                            
+                                                            <div class="OtherDetlDiv">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Jointly Second Holder</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp; {JointlySecondHolder}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Jointly Third Holder</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp; {JointlyThirdHolder}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Nominee / Relationship</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp; {NomineeName} / {NomineeRelationship}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Payable to</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp; {Payableto}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>THE SUM OF RUPEES</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp; {theSumOfRupees}</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="PaySlipRight">
+                                                            <div class="PaySlipRightDiv1">
+                                                                <h5>Mahindra & Mahindra Financial Services Limited.</h5>
+                                                                <p>CIN: <span>{CIN}</span></p>
+                                                                <p>{MahindraAddress}</p>
+                                                            </div>
+                                                            <div class="PaySlipRightDiv2" style="margin-top:-100px;border:2px #333;{dis}">
+                                                                <img src=" https://uat-e-sarathi.mfeka.com/WA_FD_ESARATHI_CDN/images/Dummy_Document.png" style="height: 70px;" />
+                                                            </div>
+                                                            <div class="PaySlipRightDiv2">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>FD Application Number</td>
+                                                                            <td>:</td>
+                                                                            <td>{FDApplicationNumber}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>FD Application Date</td>
+                                                                            <td>:</td>
+                                                                            <td>{FDApplicationDate}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Folio Number</td>
+                                                                            <td>:</td>
+                                                                            <td>(Post MF Verification)</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>FDR Number</td>
+                                                                            <td>:</td>
+                                                                            <td>(Post MF Verification)</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <p class="PText2">
+                                                        </p>
+                                                        <div class="FDDtlTblDiv">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Transaction Date</td>
+                                                                        <td>Transaction ID</td>
+                                                                        <td>Transaction Amount</td>
+                                                                        <td>Period(MM)</td>
+                                                                        <td>Rate of Interest(% P.A.)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>{TxnDate}</td>
+                                                                        <td>{TransactionId}</td>
+                                                                        <td>{DepositAmount}</td>
+                                                                        <td>{Period}</td>
+                                                                        <td>{RateofInterest}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="SignTextDiv">
+                                                            <label class="SignText1">For Mahindra & Mahindra Financial Services Limited</label>
+                                                            <label class="SignText2">Authorised Signatory</label>
+                                                            <label class="SignText2">Note: This is a system generated acknowledgement and does not require signature.</label>
+                                                        </div>
+                                                        <div class="DottedBorder2px"></div>
+                                                    </div>
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="InvDtlTbl">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>PAN of the First Depositor</td>
+                                                                        <td>:</td>
+                                                                        <td>{PANoftheFirstDepositor}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Bank Account Number</td>
+                                                                        <td>:</td>
+                                                                        <td>{BankAccountNumber}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Name of the Bank and Branch</td>
+                                                                        <td>:</td>
+                                                                        <td>{NameoftheBankandBranch}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>MICR / IFSC Code</td>
+                                                                        <td>:</td>
+                                                                        <td>{MICR_IFSC_Code}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Date of Birth of the First Depositor</td>
+                                                                        <td>:</td>
+                                                                        <td>{DateofBirthoftheFirstDepositor}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Category</td>
+                                                                        <td>:</td>
+                                                                        <td>{Category}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Scheme</td>
+                                                                        <td>:</td>
+                                                                        <td>{Scheme}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Payment Mode</td>
+                                                                        <td>:</td>
+                                                                        <td>{PaymentMode}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Broker Code</td>
+                                                                        <td>:</td>
+                                                                        <td>{BrokerCode}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>E-mail ID</td>
+                                                                        <td>:</td>
+                                                                        <td>{EmailID}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Interest Payment Frequency</td>
+                                                                        <td>:</td>
+                                                                        <td>{InterestPaymentFrequency}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Form 15 G / H</td>
+                                                                        <td>:</td>
+                                                                        <td>{Form15GH}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Maturity Instruction</td>
+                                                                        <td>:</td>
+                                                                        <td>{MaturityInstruction}</td>
+                                                                    </tr>
+                                                                    <!--<tr>
+        <td>Loan / Lien</td>
+        <td>:</td>
+        <td>{LoanLien}</td>
+    </tr>-->
+                                                                    <!--<tr>
+        <td>KYC Verified by</td>
+        <td>:</td>
+        <td>{KYCVerifiedby}</td>
+    </tr>-->
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="NoteDiv">
+                                                            <label class="NoteLblText">Note:</label>
+                                                            <div class="NoteUlOutr">
+                                                                <ul>
+                                                                    <li>1. This is only an acknowledgment for your Fixed Deposit application & not Fixed Deposit Receipt.</li>
+                                                                    <li>2. Your FD Advice is valid, only subject to verification of your KYC documents & amount realization by the company. Any transaction done on Bank or public holidays shall be considered on next business working day.</li>
+                                                                    <li>3. We request you to scrutinise the above details carefully and contact us IMMEDIATELY if any discrepancy is noticed.</li>
+                                                                    <li>4. Please quote the FD Advice Number or your PAN Number   in all correspondence addressed to the Fixed Deposit Processing Center for better service before your FD receipt is issued.</li>
+                                                                    <li>5. Please update your email ID and mobile number for better service.</li>
+                                                                    <li>6. In case your or joint holders POA\POI information has a discrepancy , updated CKYC data of yours or joint holders shall be considered for creating Fixed Deposit Receipt.</li>
+                                                                    <!--<li>7. This is a system generated acknowledgement and does not require signature.</li>-->
+                                                                    <li>7. For any further assistance you may please call us on 1800 266 9266 between 10.00 am to 5.00 pm (Monday to Friday) or write to us at mfinfd@mahindra.com . For more information on the our product you may please log on to our website www.mahindrafinance.com</li>                                                                    
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="">
+                                                            <p class="PText2">
+                                                                <label>Registered Office: </label> Gateway Building, Apollo Bunder, Mumbai-400 001, India
+                                                            </p>
+                                                            <p class="PText2">
+                                                                <label>CIN: </label>{CIN} <!--L656556566565566566565-->.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            
+        <!--</div>-->
+        <!-- END OF PAGE BODY SECTION -->
+    <!-- </div>-->
+
+
+    
+
+
+
+  
+   
+
+</body>
+
+</html>
